@@ -103,22 +103,42 @@ jobs:
           chmod +x ./php-security-checker
           unset PHP_SC_VERSION
           ./php-security-checker
+
   migration:
     runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_DATABASE: ${{ env.DB_DATABASE }}
+          MYSQL_USER: ${{ env.DB_USERNAME }}
+          MYSQL_PASSWORD: ${{ env.DB_PASSWORD }}
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -proot"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
     steps:
-      - uses: actions/checkout@v2
-      - uses: mirromutth/mysql-action@v1.1
-        with:
-          mysql database: ${{env.DB_DATABASE}}
-          mysql user: ${{env.DB_USERNAME}}
-          mysql password: ${{env.DB_PASSWORD}}
+      - uses: actions/checkout@v4
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
-      - name: 'Run migration'
-        run: |
-          sudo composer install
-          php artisan migrate --force
+          tools: composer:v2
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist --no-progress
+      - name: Run migrations
+        env:
+          DB_CONNECTION: mysql
+          DB_HOST: 127.0.0.1
+          DB_PORT: 3306
+          DB_DATABASE: ${{ env.DB_DATABASE }}
+          DB_USERNAME: ${{ env.DB_USERNAME }}
+          DB_PASSWORD: ${{ env.DB_PASSWORD }}
+        run: php artisan migrate --force
+
   deploy:
     runs-on: ubuntu-20.04
     if: ${{ github.event_name == 'deployment' || github.event_name == 'push' }}
