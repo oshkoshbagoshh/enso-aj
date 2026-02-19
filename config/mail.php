@@ -51,21 +51,10 @@ return [
 
         'mailgun' => [
             'transport' => 'mailgun',
-            'client' => [
-                'timeout' => 60 * 3,
-            ],
         ],
 
         'postmark' => [
             'transport' => 'postmark',
-            // 'message_stream_id' => env('POSTMARK_MESSAGE_STREAM_ID'),
-            // 'client' => [
-            //     'timeout' => 5,
-            // ],
-        ],
-
-        'resend' => [
-            'transport' => 'resend',
         ],
 
         'sendmail' => [
@@ -112,7 +101,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'name' => env('MAIL_FROM_NAME', env('APP_NAME', 'Laravel')),
     ],
 
     /*

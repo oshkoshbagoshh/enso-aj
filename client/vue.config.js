@@ -12,6 +12,7 @@ if (inProduction && !usesSentry) {
 
 module.exports = {
     transpileDependencies: [
+        'vue-router',
         '@enso-ui/route-mapper',
         '@enso-ui/strings',
         '@enso-ui/toastr',
