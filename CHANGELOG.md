@@ -2,13 +2,15 @@
 
 ## 8.0.0
 
-This release focuses on aligning Laravel Enso with the latest Laravel version (v12), while continuing the effort of simplifying the codebase, removing legacy patterns, and improving consistency across packages.
+This release focuses on aligning Laravel Enso with the latest Laravel version (v12), while continuing the effort to simplify the codebase, removing legacy patterns, and improving consistency across packages.
+
+In this release cycle, we have also invested significant effort into rewriting and improving several private packages related to the webshop ecosystem, focusing on stability, performance, and long-term scalability.
 
 We are also planning the next iteration to focus on upgrading the front-end stack, including adopting more modern Node.js versions and refreshing key dependencies across the ecosystem.
 
 ### Laravel 12 Compatibility
 
-Laravel Enso is now fully compatible with Laravel 12 and includes alignments with the latest framework conventions.
+Laravel Enso is now fully compatible with Laravel 12 and includes alignment with the latest framework conventions.
 
 ### Front-end
 
@@ -409,12 +411,12 @@ To successfully upgrade to Laravel 12 and this latest version of Enso, follow th
    php artisan upgrade
    ```
 
-7. **Upgrade FE dependencits:** Complete the DE upgrade process:
+7. **Upgrade FE dependencies:** Complete the FE upgrade process:
     - add vue-router to transpile / optimize dependencies in vite.config.js
     - update minimatch using resolutions to avoid dependency conflicts
 
    ```bash
-   run `yarn`, `yarn upgrade && yarn` in `/client`
+   run `yarn` and `yarn upgrade && yarn` in `/client`
    ```
 
 ## 7.0.0
