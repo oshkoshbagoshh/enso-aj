@@ -1,5 +1,422 @@
 # Laravel Enso's Changelog
 
+## 8.0.0
+
+This release focuses on aligning Laravel Enso with the latest Laravel version (v12), while continuing the effort of simplifying the codebase, removing legacy patterns, and improving consistency across packages.
+
+We are also planning the next iteration to focus on upgrading the front-end stack, including adopting more modern Node.js versions and refreshing key dependencies across the ecosystem.
+
+### Laravel 12 Compatibility
+
+Laravel Enso is now fully compatible with Laravel 12 and includes alignments with the latest framework conventions.
+
+### Front-end
+
+#### calendar
+
+updated css
+
+#### card
+added collapsible prop
+
+#### categories
+improved layout
+
+filtered, picture url
+
+#### files
+added thumbnail functionality
+
+removed duplicated data
+
+#### filters
+
+implemented multiple enso filter functionality
+
+fixed interval filter clear bug
+
+#### monitored-emails
+
+added test button
+
+#### services
+added ability to add acquisition price for suppliers
+
+#### tasks
+fixed toggle button from completed column
+
+refactored reminder column and centered table values
+
+#### themes
+added min-w-0 & is-scrollable helpers
+
+#### ui
+added force selection on search typeahead
+
+added ctrl space hotkey for search bar
+
+### back-end
+
+#### addresses
+fixed upgrade edge case
+
+#### api
+added laravel 12 support
+
+removed laravel framework dependency, already required in helpers package
+
+implemented UsesBasicAuth interface;
+
+added body and query parameters to log
+
+#### avatars
+added laravel 12 support
+
+#### charts
+removed laravel enso framework dependency, already required in helpers
+
+#### companies
+added is_public_institution column
+
+addressed merge request discussion
+
+removed is_tenant column and its modifiers
+
+made git look up model
+
+improved email validation
+
+#### core
+added youtube to config
+
+#### data-export
+added ability to customize sheet name in async importer
+
+#### data-import
+added flexible templates
+
+#### dynamic-methods
+added laravel 12 support
+
+#### enums
+
+added laravel 12 support
+
+#### filters
+fixed filter init on edge cases
+
+removed laravel framework dependemncy, already required in helpers package
+
+#### forms
+fixed validation when passing array to enum options
+
+removed laravel framework dependency, already required in helpers package
+
+#### google
+upgraded places api
+
+added Referer
+
+added resources
+
+added publishing method
+
+#### helpers
+added loan calculator
+
+added new vat rates
+
+added laravel 12 support
+
+refined Loan
+
+added multiplers helper in vat rates
+
+#### history-tracker
+added laravel 12 support
+
+#### image-transformer
+removed laravel framework dependency, already required in helpers package
+
+#### people
+improved email validation
+
+#### rememberable
+added laravel 12 support
+
+#### searchable
+implemented search provider support
+
+#### select
+removed laravel framework dependency, already required in helpers package
+
+#### tables
+added fix for mappable enums
+
+added ability to use relation methods
+
+removed laravel framework dependency, already required in core package
+
+#### tasks
+added DynamicMethods and Abilities for tasks
+
+fixed tasks without reminders
+
+#### track-who
+added laravel 12 support
+
+#### upgrade
+added ability to sync roles by id during structure migration
+
+removed contract
+
+removed laravel framework dependency, already required in core package
+
+#### users
+improved email validation
+
+#### webshop-commercial
+dropped payment methods column
+
+deprecated order contract
+
+fixed orders show
+
+fixed pay controller
+
+deprecated invoice contract
+
+finalized merge with webshop
+
+removed stripe dependency
+
+#### webshop
+added nin field in user info form
+
+removed mandatory nin
+
+updated validation
+
+fixed duplicated checkout; added loading class on checkout button
+
+added sorts to returned products
+
+fixed subcategories
+
+added logs, attempts fix
+
+fixed subcategory products
+
+added missing attributes to returned product
+
+attempted to mitigate effects of duplicated callback calling
+
+added rating and reviewsCOunt to product resource
+
+added isFavourite to Product Resource
+
+temp fixed loading userfavs; send config productIdentifier to shared data
+
+fixed companies
+
+fixed sector display on autocomplete
+
+updated Addresses and Companies Controllers for new Inertia forms
+
+updated CreditCard Store Controller & others
+
+moved new frontend files back to webshop package with working hmr
+
+added gitignore in package public folder and addnl keys in lang ro json
+
+fixed decimals
+
+deprecated Order Contract
+
+replaced images path with @images
+
+completed account payment addresses companies layout
+
+deprecated StoreOrder contract
+
+deprecated invoice contract
+
+finalized merge with webshop-commercial
+
+extracted store in webshop commercial
+
+removed unused contract
+
+added cleanup observer
+
+removed view service provider
+
+implemented local module overwrite capability
+
+displayed cart sections only when the cart was not empty
+
+refactored forminput
+
+added review like and dislike functionality
+
+deprecated form input in account forms
+
+added Featured Pages Layout and Example Page with placeholder data
+
+removed unused Collapsible component
+
+refactored form input
+
+removed form input vue
+
+replaced Toastr with Session::flash for toast messages
+
+added recaptcha validation to all forms not protected by login
+
+added contact form functionality
+
+added activation required page
+
+added registration disabled message if not allowed
+
+added Order confirmation page content
+
+product page done
+
+payment options icons
+
+fixed images
+
+fixed recaptcha
+
+added recently viewed products
+
+implemented the new packaging unit resource
+
+added subscribers
+
+fixed: missing featuredPages shared prop causes crash
+
+fixed: product gallery not loading images from hardcoded ceisales url
+
+static Brand Catalogue page
+
+added Featured Categories Slider in MegaMenu
+
+fixed long product name popover not showing; restyled BrandPreview component
+
+improved brand catalogue
+
+made brand catalogue index section stick to top on scroll
+
+improved gtm usage
+
+reset cartStore upon logout
+
+fixed cart reset upon logout
+
+extended customisation options
+
+completed mobile styling
+
+fixed large product cards in CategoryPreview
+
+added empty cart message
+
+fixed cart page crash when address property is null
+
+completed add to cart feeback
+
+tweaked account layout
+
+added cart summary on icon hover
+
+added empty cart popup message
+
+completed localization
+
+fixed category menu toggle button nowrap
+
+removed duplicate / unused createOrder method
+
+added fastCheckOut page and extracted Account form fields into components; fixed address locality autocomplete
+
+added login prompt and account creation notice to fastCheckout page
+
+better error handling in fastCheckout page
+
+added ability to resolve cart response from container
+
+fixed add new company button
+
+added custom theme overrides in PrimeVue and Sass
+
+added svg import as component plugin; dynamic svg icons colors
+
+#### emag
+
+deprecated is_tenant from company
+
+#### commercial
+added default sort for all table templates; allowed editing sale payment method for default sale channel unless sales is fulfilled
+
+fixed stock rotation
+
+removed search service provider
+
+added ability to extend product label
+
+fixed label
+
+#### financials
+Modified vatrates to new requirements for august 2025
+
+#### inventory
+
+fixed table
+
+### Upgrade Steps
+
+To successfully upgrade to Laravel 12 and this latest version of Enso, follow these steps:
+
+1. **Update Composer dependencies:** Update the Laravel Enso Core version in your `composer.json` file as well as any other relevant package upgrades.
+
+   ```bash
+    "laravel-enso/core": "^11.0",
+    "phpunit/phpunit": "^11.0",
+   ```
+2. **Run composer update:** Install the new dependencies by running the following command:
+
+   ```bash
+   composer update
+   ```
+
+3. **Follow the official Laravel 12 Upgrade guide**: Refer to the [Laravel 12 Upgrade guide](https://laravel.com/docs/12.x/upgrade), making sure to also check out the [comparison tool](https://github.com/laravel/laravel/compare/11.x...12.x) and update your files accordingly.
+
+4. **Run pre-migration upgrade:** Before migrating your database, ensure you run the upgrade preparation command:
+
+   ```bash
+   php artisan upgrade --before-migration
+   ```
+5. **Run migrations:** Update your database structure using the migration command:
+
+   ```bash
+   php artisan migrate
+   ```
+6. **Run post-migration upgrade:** Complete the BE upgrade process with the final command:
+
+   ```bash
+   php artisan upgrade
+   ```
+
+7. **Upgrade FE dependencits:** Complete the DE upgrade process:
+    - add vue-router to transpile / optimize dependencies in vite.config.js
+    - update minimatch using resolutions to avoid dependency conflicts
+
+   ```bash
+   run `yarn`, `yarn upgrade && yarn` in `/client`
+   ```
+
 ## 7.0.0
 
 This release focuses on aligning Laravel Enso with the latest Laravel version (v11), bringing significant updates and improvements. We highly recommend upgrading your base application structure to match the Laravel 11 structure to ensure full compatibility and take advantage of new features.
