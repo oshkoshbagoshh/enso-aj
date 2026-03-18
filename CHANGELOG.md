@@ -16,366 +16,366 @@ Laravel Enso is now fully compatible with Laravel 12 and includes alignment with
 
 #### calendar
 
-updated css
+- updated css
 
 #### card
-added collapsible prop
+- added collapsible prop
 
 #### categories
-improved layout
+- improved layout
 
-filtered, picture url
+- filtered, picture url
 
 #### files
-added thumbnail functionality
+- added thumbnail functionality
 
-removed duplicated data
+- removed duplicated data
 
 #### filters
 
-implemented multiple enso filter functionality
+- implemented multiple enso filter functionality
 
-fixed interval filter clear bug
+- fixed interval filter clear bug
 
 #### monitored-emails
 
-added test button
+- added test button
 
 #### services
-added ability to add acquisition price for suppliers
+- added ability to add acquisition price for suppliers
 
 #### tasks
-fixed toggle button from completed column
+- fixed toggle button from completed column
 
-refactored reminder column and centered table values
+- refactored reminder column and centered table values
 
 #### themes
-added min-w-0 & is-scrollable helpers
+- added min-w-0 & is-scrollable helpers
 
 #### ui
-added force selection on search typeahead
+- added force selection on search typeahead
 
-added ctrl space hotkey for search bar
+- added ctrl space hotkey for search bar
 
 ### back-end
 
 #### addresses
-fixed upgrade edge case
+- fixed upgrade edge case
 
 #### api
-added laravel 12 support
+- added laravel 12 support
 
-removed laravel framework dependency, already required in helpers package
+- removed laravel framework dependency, already required in helpers package
 
-implemented UsesBasicAuth interface;
+- implemented UsesBasicAuth interface;
 
-added body and query parameters to log
+- added body and query parameters to log
 
 #### avatars
-added laravel 12 support
+- added laravel 12 support
 
 #### charts
-removed laravel enso framework dependency, already required in helpers
+- removed laravel enso framework dependency, already required in helpers
 
 #### companies
-added is_public_institution column
+- added is_public_institution column
 
-addressed merge request discussion
+- addressed merge request discussion
 
-removed is_tenant column and its modifiers
+- removed is_tenant column and its modifiers
 
-made git look up model
+- made git look up model
 
-improved email validation
+- improved email validation
 
 #### core
-added youtube to config
+- added youtube to config
 
 #### data-export
-added ability to customize sheet name in async importer
+- added ability to customize sheet name in async importer
 
 #### data-import
-added flexible templates
+- added flexible templates
 
 #### dynamic-methods
-added laravel 12 support
+- added laravel 12 support
 
 #### enums
 
-added laravel 12 support
+- added laravel 12 support
 
 #### filters
-fixed filter init on edge cases
+- fixed filter init on edge cases
 
-removed laravel framework dependemncy, already required in helpers package
+- removed laravel framework dependemncy, already required in helpers package
 
 #### forms
-fixed validation when passing array to enum options
+- fixed validation when passing array to enum options
 
-removed laravel framework dependency, already required in helpers package
+- removed laravel framework dependency, already required in helpers package
 
 #### google
-upgraded places api
+- upgraded places api
 
-added Referer
+- added Referer
 
-added resources
+- added resources
 
-added publishing method
+- added publishing method
 
 #### helpers
-added loan calculator
+- added loan calculator
 
-added new vat rates
+- added new vat rates
 
-added laravel 12 support
+- added laravel 12 support
 
-refined Loan
+- refined Loan
 
-added multiplers helper in vat rates
+- added multiplers helper in vat rates
 
 #### history-tracker
-added laravel 12 support
+- added laravel 12 support
 
 #### image-transformer
-removed laravel framework dependency, already required in helpers package
+- removed laravel framework dependency, already required in helpers package
 
 #### people
-improved email validation
+- improved email validation
 
 #### rememberable
-added laravel 12 support
+- added laravel 12 support
 
 #### searchable
-implemented search provider support
+- implemented search provider support
 
 #### select
-removed laravel framework dependency, already required in helpers package
+- removed laravel framework dependency, already required in helpers package
 
 #### tables
-added fix for mappable enums
+- added fix for mappable enums
 
-added ability to use relation methods
+- added ability to use relation methods
 
-removed laravel framework dependency, already required in core package
+- removed laravel framework dependency, already required in core package
 
 #### tasks
-added DynamicMethods and Abilities for tasks
+- added DynamicMethods and Abilities for tasks
 
-fixed tasks without reminders
+- fixed tasks without reminders
 
 #### track-who
-added laravel 12 support
+- added laravel 12 support
 
 #### upgrade
-added ability to sync roles by id during structure migration
+- added ability to sync roles by id during structure migration
 
-removed contract
+- removed contract
 
-removed laravel framework dependency, already required in core package
+- removed laravel framework dependency, already required in core package
 
 #### users
-improved email validation
+- improved email validation
 
 #### webshop-commercial
-dropped payment methods column
+- dropped payment methods column
 
-deprecated order contract
+- deprecated order contract
 
-fixed orders show
+- fixed orders show
 
-fixed pay controller
+- fixed pay controller
 
-deprecated invoice contract
+- deprecated invoice contract
 
-finalized merge with webshop
+- finalized merge with webshop
 
-removed stripe dependency
+- removed stripe dependency
 
 #### webshop
-added nin field in user info form
+- added nin field in user info form
 
-removed mandatory nin
+- removed mandatory nin
 
-updated validation
+- updated validation
 
-fixed duplicated checkout; added loading class on checkout button
+- fixed duplicated checkout; added loading class on checkout button
 
-added sorts to returned products
+- added sorts to returned products
 
-fixed subcategories
+- fixed subcategories
 
-added logs, attempts fix
+- added logs, attempts fix
 
-fixed subcategory products
+- fixed subcategory products
 
-added missing attributes to returned product
+- added missing attributes to returned product
 
-attempted to mitigate effects of duplicated callback calling
+- attempted to mitigate effects of duplicated callback calling
 
-added rating and reviewsCOunt to product resource
+- added rating and reviewsCOunt to product resource
 
-added isFavourite to Product Resource
+- added isFavourite to Product Resource
 
-temp fixed loading userfavs; send config productIdentifier to shared data
+- temp fixed loading userfavs; send config productIdentifier to shared data
 
-fixed companies
+- fixed companies
 
-fixed sector display on autocomplete
+- fixed sector display on autocomplete
 
-updated Addresses and Companies Controllers for new Inertia forms
+- updated Addresses and Companies Controllers for new Inertia forms
 
-updated CreditCard Store Controller & others
+- updated CreditCard Store Controller & others
 
-moved new frontend files back to webshop package with working hmr
+- moved new frontend files back to webshop package with working hmr
 
-added gitignore in package public folder and addnl keys in lang ro json
+- added gitignore in package public folder and addnl keys in lang ro json
 
-fixed decimals
+- fixed decimals
 
-deprecated Order Contract
+- deprecated Order Contract
 
-replaced images path with @images
+- replaced images path with @images
 
-completed account payment addresses companies layout
+- completed account payment addresses companies layout
 
-deprecated StoreOrder contract
+- deprecated StoreOrder contract
 
-deprecated invoice contract
+- deprecated invoice contract
 
-finalized merge with webshop-commercial
+- finalized merge with webshop-commercial
 
-extracted store in webshop commercial
+- extracted store in webshop commercial
 
-removed unused contract
+- removed unused contract
 
-added cleanup observer
+- added cleanup observer
 
-removed view service provider
+- removed view service provider
 
-implemented local module overwrite capability
+- implemented local module overwrite capability
 
-displayed cart sections only when the cart was not empty
+- displayed cart sections only when the cart was not empty
 
-refactored forminput
+- refactored forminput
 
-added review like and dislike functionality
+- added review like and dislike functionality
 
-deprecated form input in account forms
+- deprecated form input in account forms
 
-added Featured Pages Layout and Example Page with placeholder data
+- added Featured Pages Layout and Example Page with placeholder data
 
-removed unused Collapsible component
+- removed unused Collapsible component
 
-refactored form input
+- refactored form input
 
-removed form input vue
+- removed form input vue
 
-replaced Toastr with Session::flash for toast messages
+- replaced Toastr with Session::flash for toast messages
 
-added recaptcha validation to all forms not protected by login
+- added recaptcha validation to all forms not protected by login
 
-added contact form functionality
+- added contact form functionality
 
-added activation required page
+- added activation required page
 
-added registration disabled message if not allowed
+- added registration disabled message if not allowed
 
-added Order confirmation page content
+- added Order confirmation page content
 
-product page done
+- product page done
 
-payment options icons
+- payment options icons
 
-fixed images
+- fixed images
 
-fixed recaptcha
+- fixed recaptcha
 
-added recently viewed products
+- added recently viewed products
 
-implemented the new packaging unit resource
+- implemented the new packaging unit resource
 
-added subscribers
+- added subscribers
 
-fixed: missing featuredPages shared prop causes crash
+- fixed: missing featuredPages shared prop causes crash
 
-fixed: product gallery not loading images from hardcoded ceisales url
+- fixed: product gallery not loading images from hardcoded ceisales url
 
-static Brand Catalogue page
+- static Brand Catalogue page
 
-added Featured Categories Slider in MegaMenu
+- added Featured Categories Slider in MegaMenu
 
-fixed long product name popover not showing; restyled BrandPreview component
+- fixed long product name popover not showing; restyled BrandPreview component
 
-improved brand catalogue
+- improved brand catalogue
 
-made brand catalogue index section stick to top on scroll
+- made brand catalogue index section stick to top on scroll
 
-improved gtm usage
+- improved gtm usage
 
-reset cartStore upon logout
+- reset cartStore upon logout
 
-fixed cart reset upon logout
+- fixed cart reset upon logout
 
-extended customisation options
+- extended customisation options
 
-completed mobile styling
+- completed mobile styling
 
-fixed large product cards in CategoryPreview
+- fixed large product cards in CategoryPreview
 
-added empty cart message
+- added empty cart message
 
-fixed cart page crash when address property is null
+- fixed cart page crash when address property is null
 
-completed add to cart feeback
+- completed add to cart feeback
 
-tweaked account layout
+- tweaked account layout
 
-added cart summary on icon hover
+- added cart summary on icon hover
 
-added empty cart popup message
+- added empty cart popup message
 
-completed localization
+- completed localization
 
-fixed category menu toggle button nowrap
+- fixed category menu toggle button nowrap
 
-removed duplicate / unused createOrder method
+- removed duplicate / unused createOrder method
 
-added fastCheckOut page and extracted Account form fields into components; fixed address locality autocomplete
+- added fastCheckOut page and extracted Account form fields into components; fixed address locality autocomplete
 
-added login prompt and account creation notice to fastCheckout page
+- added login prompt and account creation notice to fastCheckout page
 
-better error handling in fastCheckout page
+- better error handling in fastCheckout page
 
-added ability to resolve cart response from container
+- added ability to resolve cart response from container
 
-fixed add new company button
+- fixed add new company button
 
-added custom theme overrides in PrimeVue and Sass
+- added custom theme overrides in PrimeVue and Sass
 
-added svg import as component plugin; dynamic svg icons colors
+- added svg import as component plugin; dynamic svg icons colors
 
 #### emag
 
-deprecated is_tenant from company
+- deprecated is_tenant from company
 
 #### commercial
-added default sort for all table templates; allowed editing sale payment method for default sale channel unless sales is fulfilled
+- added default sort for all table templates; allowed editing sale payment method for default sale channel unless sales is fulfilled
 
-fixed stock rotation
+- fixed stock rotation
 
-removed search service provider
+- removed search service provider
 
-added ability to extend product label
+- added ability to extend product label
 
-fixed label
+- fixed label
 
 #### financials
-Modified vatrates to new requirements for august 2025
+- Modified vatrates to new requirements for august 2025
 
 #### inventory
 
-fixed table
+- fixed table
 
 ### Upgrade Steps
 
