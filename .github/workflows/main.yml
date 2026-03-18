@@ -140,7 +140,7 @@ jobs:
         run: php artisan migrate --force
 
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     if: ${{ github.event_name == 'deployment' || github.event_name == 'push' }}
     needs: [phpunit, phpcpd, migration, yarn, security, php-insights]
     steps:
