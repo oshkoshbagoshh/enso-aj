@@ -31,6 +31,10 @@ Laravel Enso is now fully compatible with Laravel 12 and includes alignment with
 
 - removed duplicated data
 
+- fixed date format
+
+- fixed actions disappearing
+
 #### filters
 
 - implemented multiple enso filter functionality
@@ -56,6 +60,9 @@ Laravel Enso is now fully compatible with Laravel 12 and includes alignment with
 - added force selection on search typeahead
 
 - added ctrl space hotkey for search bar
+
+#### users
+- removed delete person ability
 
 ### back-end
 
@@ -88,8 +95,14 @@ Laravel Enso is now fully compatible with Laravel 12 and includes alignment with
 
 - improved email validation
 
+- fixed null company route error in `mandataryIsNotAssociated()`
+
 #### core
 - added youtube to config
+
+- migrated to Laravel 12
+
+- improved preferences
 
 #### data-export
 - added ability to customize sheet name in async importer
@@ -137,6 +150,12 @@ Laravel Enso is now fully compatible with Laravel 12 and includes alignment with
 #### history-tracker
 - added laravel 12 support
 
+#### localisation
+- improved preferences
+
+#### logs
+- fixed edge case where file size was cached
+
 #### image-transformer
 - removed laravel framework dependency, already required in helpers package
 
@@ -159,6 +178,8 @@ Laravel Enso is now fully compatible with Laravel 12 and includes alignment with
 
 - removed laravel framework dependency, already required in core package
 
+- improved preferences
+
 #### tasks
 - added DynamicMethods and Abilities for tasks
 
@@ -173,6 +194,8 @@ Laravel Enso is now fully compatible with Laravel 12 and includes alignment with
 - removed contract
 
 - removed laravel framework dependency, already required in core package
+
+- fixed `isText` helper
 
 #### users
 - improved email validation
@@ -354,6 +377,10 @@ Laravel Enso is now fully compatible with Laravel 12 and includes alignment with
 - added custom theme overrides in PrimeVue and Sass
 
 - added svg import as component plugin; dynamic svg icons colors
+
+- made Inertia middleware more inheritable
+
+- implemented Sentry in new Webshop
 
 #### emag
 
