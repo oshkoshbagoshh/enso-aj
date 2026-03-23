@@ -408,7 +408,7 @@ Laravel Enso is now fully compatible with Laravel 12 and includes alignment with
 
 To successfully upgrade to Laravel 12 and this latest version of Enso, follow these steps:
 
-1. **Update Composer dependencies:** Update the Laravel Enso Core version in your `composer.json` file as well as any other relevant package upgrades.
+1. **Update Composer dependencies:** Update the Laravel Enso Core version in your [`composer.json`](https://github.com/laravel-enso/enso/blob/master/composer.json) file as well as any other relevant package upgrades.
 
    ```bash
     "laravel-enso/core": "^11.0",
@@ -425,7 +425,7 @@ To successfully upgrade to Laravel 12 and this latest version of Enso, follow th
 4. **Run pre-migration upgrade:** Before migrating your database, ensure you run the upgrade preparation command:
 
    ```bash
-   php artisan upgrade --before-migration
+   php artisan enso:upgrade --before-migration
    ```
 5. **Run migrations:** Update your database structure using the migration command:
 
@@ -435,16 +435,22 @@ To successfully upgrade to Laravel 12 and this latest version of Enso, follow th
 6. **Run post-migration upgrade:** Complete the BE upgrade process with the final command:
 
    ```bash
-   php artisan upgrade
+   php artisan enso:upgrade
    ```
 
 7. **Upgrade FE dependencies:** Complete the FE upgrade process:
-    - add vue-router to transpile / optimize dependencies in vite.config.js
+    - add vue-router to transpile / optimize dependencies in [`vue.config.js`](https://github.com/laravel-enso/enso/blob/master/client/vue.config.js)
     - update minimatch using resolutions to avoid dependency conflicts
 
    ```bash
    run `yarn` and `yarn upgrade && yarn` in `/client`
    ```
+
+8. **Sync configs**: Be sure to update your `.env` file with any new or updated config keys, and also update your config files if necessary:
+    - update Enso's `'version' => '8.0.0',` in `config/enso/config.php` (see [config.php](https://github.com/laravel-enso/enso/blob/master/config/enso/config.php))
+    - check [config](https://github.com/laravel-enso/enso/tree/master/config) for any new/missing config files or keys
+    - check [.env.example](https://github.com/laravel-enso/enso/blob/master/.env.example) for any new/missing configs
+
 
 ## 7.0.0
 

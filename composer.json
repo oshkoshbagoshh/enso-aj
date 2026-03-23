@@ -1,7 +1,7 @@
 {
     "name": "laravel-enso/enso",
     "type": "project",
-    "description": "Laravel Enso can be a solid start for any SPA based on Laravel 10.x, Vue and Bulma",
+    "description": "Laravel Enso can be a solid start for any SPA based on Laravel 12.x, Vue and Bulma",
     "keywords": [
         "framework",
         "laravel"
