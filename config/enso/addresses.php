@@ -2,5 +2,5 @@
 
 return [
     'onDelete' => 'cascade',
-    'defaultCountryId' => 184,
+    'defaultCountryId' => (int) env('DEFAULT_COUNTRY_ID', 1),
 ];
