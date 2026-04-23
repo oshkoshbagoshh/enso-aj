@@ -5,7 +5,6 @@
             <directory suffix="Test.php">./tests</directory>
             <directory suffix="Test.php">./vendor/laravel-enso/action-logger/tests</directory>
             <directory suffix="Test.php">./vendor/laravel-enso/addresses/tests</directory>
-            <directory suffix="Test.php">./vendor/laravel-enso/api/tests</directory>
             <directory suffix="Test.php">./vendor/laravel-enso/calendar/tests</directory>
             <directory suffix="Test.php">./vendor/laravel-enso/charts/tests</directory>
             <directory suffix="Test.php">./vendor/laravel-enso/comments/tests</directory>
