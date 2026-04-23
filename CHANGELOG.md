@@ -24,6 +24,9 @@ Laravel Enso 9.0.0 aligns the ecosystem with Laravel 13 and raises the minimum P
 - realigned shared components, tables, filters, forms, menus, settings, and shell layouts around a cleaner Bulma-first visual language
 - updated the ecosystem with a clear goal of bringing the Enso frontend stack and package contracts to a current, maintainable baseline
 - normalized shared styling ownership so UI policy lives in the shared UI layer instead of being scattered across package-local overrides
+- retired legacy helper-class conventions such as `is-paddingless`, `is-marginless`, `raises-on-hover`, and `has-background-dark` from the shared UI baseline
+- kept spacing migration explicit at the utility level: `is-paddingless` now maps to `p-0`, while `is-marginless` now maps to `m-0`
+- did not introduce generic one-to-one replacements for `raises-on-hover` or `has-background-dark`; applications should remove those legacy helpers unless they still have a local app-specific reason to keep an equivalent style
 
 #### frontend runtime
 
@@ -660,6 +663,8 @@ In practice:
 - update local route bootstrap and package route imports to consume the published modules exposed by the owning packages
 - update `client/src/sass/app.scss` so it only keeps app-local branding and Bulma token overrides; do not move auth layout styling into the host app
 - update `client/src/sass/enso.scss` so it wraps local styles around the shared Enso UI entrypoint instead of reintroducing legacy shared styling layers; at minimum it must import `@enso-ui/ui/src/bulma/styles/enso` and then the local `app.scss`, otherwise guest/auth pages will miss the shared Bulma / Enso base styles and render with broken form layout
+- replace legacy spacing helpers in local templates: `is-paddingless` becomes `p-0` and `is-marginless` becomes `m-0`
+- remove legacy helper classes such as `raises-on-hover` and `has-background-dark` from local page chrome during the upgrade unless the host app intentionally reintroduces an app-owned equivalent
 - remove remaining assumptions that route and state ownership live implicitly inside `@enso-ui/ui`
 - if your application has published Enso config overrides, align local button classes in `config/forms.php` and `config/tables.php` with the new `is-dark` default action style for a more uniform look
 - if your application overrides delete confirmation text through local Enso config, align those messages with the current backend package defaults from `laravel-enso/forms` and `laravel-enso/tables`; for the Enso 9 baseline documented here, both default destroy confirmations are simply `Are you sure?`
