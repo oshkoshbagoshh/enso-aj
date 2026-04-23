@@ -512,10 +512,10 @@
     "@fortawesome/vue-fontawesome" "3.1.3"
     lodash "^4.17.10"
 
-"@enso-ui/ui@^7.1.17":
-  version "7.1.33"
-  resolved "https://registry.yarnpkg.com/@enso-ui/ui/-/ui-7.1.33.tgz#82863c7c3b2947c3407f1480b564c0a113cb6189"
-  integrity sha512-T+JNB76aLpEuiiKRDtcgYtoRy20ZkxyI6OBRvyvzy7Yj6aQgHqPGG1C5twXQk1JHF7ILE0pXcv4LenJlWJhurQ==
+"@enso-ui/ui@^7.1.34":
+  version "7.1.34"
+  resolved "https://registry.yarnpkg.com/@enso-ui/ui/-/ui-7.1.34.tgz#7caeced67087bc91cbaf4be8a89835150686116d"
+  integrity sha512-C76wni9tqP3/Egf/N8raby+XU0qatiB0/kvwRwbI4mmPUmK4fBX0hZn1fAiQAmPtvwF8CG44PW2HcU2qST7Ryw==
   dependencies:
     tiny-emitter "^2.1.0"
 
@@ -1848,9 +1848,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     gopd "^1.2.0"
 
 electron-to-chromium@^1.5.328:
-  version "1.5.343"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.343.tgz#8e5fb55a61fb1053d888f964f29b65814afed847"
-  integrity sha512-YHnQ3MXI08icvL9ZKnEBy05F2EQ8ob01UaMOuMbM8l+4UcAq6MPPbBTJBbsBUg3H8JeZNt+O4fjsoWth3p6IFg==
+  version "1.5.344"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.344.tgz#6437cc08a7d9b914a98120e182f37793c9eaffd4"
+  integrity sha512-4MxfbmNDm+KPh066EZy+eUnkcDPcZ35wNmOWzFuh/ijvHsve6kbLTLURy88uCNK5FbpN+yk2nQY6BYh1GEt+wg==
 
 emoji-regex@^9.2.2:
   version "9.2.2"
