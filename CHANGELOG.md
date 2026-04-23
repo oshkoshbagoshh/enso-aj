@@ -662,6 +662,7 @@ In practice:
 - update `client/src/sass/enso.scss` so it wraps local styles around the shared Enso UI entrypoint instead of reintroducing legacy shared styling layers; at minimum it must import `@enso-ui/ui/src/bulma/styles/enso` and then the local `app.scss`, otherwise guest/auth pages will miss the shared Bulma / Enso base styles and render with broken form layout
 - remove remaining assumptions that route and state ownership live implicitly inside `@enso-ui/ui`
 - if your application has published Enso config overrides, align local button classes in `config/forms.php` and `config/tables.php` with the new `is-dark` default action style for a more uniform look
+- if your application overrides delete confirmation text through local Enso config, align those messages with the current backend package defaults from `laravel-enso/forms` and `laravel-enso/tables`; for the Enso 9 baseline documented here, both default destroy confirmations are simply `Are you sure?`
 
 #### 7. Migrate backend state providers
 
