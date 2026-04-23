@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64ee29844229dd05590124c52034d43a",
+    "content-hash": "eda63b258a01e8882ef78f311597fd4f",
     "packages": [
         {
             "name": "barryvdh/laravel-snappy",
@@ -2003,76 +2003,6 @@
             "time": "2026-04-21T15:06:51+00:00"
         },
         {
-            "name": "laravel-enso/api",
-            "version": "1.12.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel-enso/api.git",
-                "reference": "83a59d9bed67738798fa6663835f7611cc334d2d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel-enso/api/zipball/83a59d9bed67738798fa6663835f7611cc334d2d",
-                "reference": "83a59d9bed67738798fa6663835f7611cc334d2d",
-                "shasum": ""
-            },
-            "require": {
-                "laravel-enso/core": "^12.0",
-                "laravel-enso/enums": "^3.0",
-                "laravel-enso/helpers": "^4.0",
-                "laravel-enso/localisation": "^5.0",
-                "laravel-enso/permissions": "^5.0",
-                "laravel-enso/rememberable": "^4.0",
-                "laravel-enso/tables": "^5.0",
-                "laravel-enso/upgrade": "^2.0",
-                "laravel-enso/users": "^2.0",
-                "laravel/framework": "^12.0|^13.0",
-                "php": "^8.2"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "LaravelEnso\\Api\\AppServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "LaravelEnso\\Api\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adrian Ocneanu",
-                    "email": "aocneanu@gmail.com",
-                    "homepage": "https://laravel-enso.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Vlad Chiovianu",
-                    "email": "vlad.chiovianu@earthlink.ro",
-                    "homepage": "https://laravel-enso.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "External service integrations and API logging for Laravel Enso",
-            "homepage": "https://github.com/laravel-enso/api",
-            "keywords": [
-                "api",
-                "laravel-enso"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel-enso/api/issues",
-                "source": "https://github.com/laravel-enso/api/tree/1.12.4"
-            },
-            "time": "2026-04-23T07:22:03+00:00"
-        },
-        {
             "name": "laravel-enso/avatars",
             "version": "4.5.7",
             "source": {
@@ -2415,127 +2345,6 @@
                 "source": "https://github.com/laravel-enso/companies/tree/4.6.8"
             },
             "time": "2026-04-20T17:08:42+00:00"
-        },
-        {
-            "name": "laravel-enso/control-panel-api",
-            "version": "3.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel-enso/control-panel-api.git",
-                "reference": "c142b773ffeba879b836d0c1e1b08747ea6a8fe5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel-enso/control-panel-api/zipball/c142b773ffeba879b836d0c1e1b08747ea6a8fe5",
-                "reference": "c142b773ffeba879b836d0c1e1b08747ea6a8fe5",
-                "shasum": ""
-            },
-            "require": {
-                "laravel-enso/action-logger": "^3.1",
-                "laravel-enso/api": "^1.2",
-                "laravel-enso/control-panel-common": "^2.0",
-                "laravel-enso/core": "^12.0",
-                "laravel-enso/helpers": "^4.0",
-                "laravel-enso/logs": "^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": [],
-                    "providers": [
-                        "LaravelEnso\\ControlPanelApi\\AppServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "LaravelEnso\\ControlPanelApi\\": "src/",
-                    "LaravelEnso\\ControlPanelApi\\Database\\Seeders\\": "database/seeders/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mihai Ocneanu",
-                    "email": "mihai.ocneanu@gmail.com",
-                    "homepage": "https://laravel-enso.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Adrian Ocneanu",
-                    "email": "aocneanu@gmail.com",
-                    "homepage": "https://laravel-enso.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Control Panel API for Laravel Enso",
-            "keywords": [
-                "api",
-                "controlpanel",
-                "laravel",
-                "laravel-enso"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel-enso/control-panel-api/issues",
-                "source": "https://github.com/laravel-enso/control-panel-api/tree/3.6.1"
-            },
-            "time": "2026-04-14T13:15:40+00:00"
-        },
-        {
-            "name": "laravel-enso/control-panel-common",
-            "version": "2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel-enso/control-panel-common.git",
-                "reference": "1bb5de82d17be17925f40ef4f16c3c57f8621d49"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel-enso/control-panel-common/zipball/1bb5de82d17be17925f40ef4f16c3c57f8621d49",
-                "reference": "1bb5de82d17be17925f40ef4f16c3c57f8621d49",
-                "shasum": ""
-            },
-            "require": {
-                "laravel-enso/helpers": "^4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "LaravelEnso\\ControlPanelCommon\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adrian Ocneanu",
-                    "email": "aocneanu@gmail.com",
-                    "homepage": "https://laravel-enso.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Reza Fouladi",
-                    "email": "raftx24@gmail.com",
-                    "homepage": "https://laravel-enso.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Control Panel Common for Laravel Enso",
-            "keywords": [
-                "controlpanel",
-                "laravel",
-                "laravel-enso"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel-enso/control-panel-common/issues",
-                "source": "https://github.com/laravel-enso/control-panel-common/tree/2.2.1"
-            },
-            "time": "2026-04-14T13:24:36+00:00"
         },
         {
             "name": "laravel-enso/core",
