@@ -44,7 +44,7 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v7
         with:
-          name: resources
+          name: resources-${{ github.sha }}
           if-no-files-found: error
           include-hidden-files: true
           path: |
